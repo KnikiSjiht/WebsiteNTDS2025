@@ -244,11 +244,11 @@ p a:hover {
 }
 
 hr {
-    width: 99px;
-    background: url(../img/other/wavylineblue.png);
-    height: 9px;
+    width: 315px;
+    background: url(../img/other/textdivider.png);
+    height: 22px;
     border: none;
-    margin-top: 18px;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
