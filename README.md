@@ -1,2 +1,2 @@
-# ETDS666
- Website for the 66th ETDS in Seesen
+# NTDS 2025
+website voor het NTDS 2025

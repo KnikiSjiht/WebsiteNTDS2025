@@ -11,7 +11,7 @@
 /* Nav */
 .tabs nav {
 	text-align: center;
-	background-color:transparent;
+	background-color: transparent;
 	margin-top: -1px;
 }
 
@@ -25,11 +25,11 @@
 
 .tabs nav ul li {
 	border-bottom:medium none;
-	background:#141115;
+	background: var(--color-contrast);
 	display: block;
 	float: left;
 	position: relative;
-	width:calc(100%/4);
+	width:calc(100%/3);
 	-moz-transition: all 0.2s ease-in-out 0.2s;
     -o-transition: all 0.2s ease-in-out 0.2s;
     -webkit-transition: all 0.2s ease-in-out 0.2s;
@@ -38,7 +38,7 @@
 }
 
 .tabs nav ul li :hover {
-    background: var(--color-contrast);
+    background: var(--color-secondary);
     -moz-transition: all 0.2s ease-in-out 0.2s;
     -o-transition: all 0.2s ease-in-out 0.2s;
     -webkit-transition: all 0.2s ease-in-out 0.2s;
@@ -47,7 +47,7 @@
 
 .tabs nav li.tab-current {
 
-	background:var(--color-contrast);
+	background:var(--color-primary);
 }
 
 .tabs nav a {
