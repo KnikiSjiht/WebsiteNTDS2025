@@ -2061,3 +2061,8 @@ ul.legals li:last-child::after {
     height: auto;        
     display: block;
 }
+
+.intro .merch-image{
+    width: 65%;
+    height: auto;
+}
