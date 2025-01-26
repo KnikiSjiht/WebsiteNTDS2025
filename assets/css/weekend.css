@@ -32,10 +32,8 @@ a.buttonContainer {
 }
 
 .button {
-    background: #383838dd;
-    box-shadow: inset 20px 20px 40px #565656dd,
-    inset -20px -20px 40px #1a1a1add,
-    0px 0px 43px #1a1a1add;
+    background: var(--color-secondary);
+    box-shadow: inset 15px 15px 30px var(--color-primary), inset -15px -15px 30px var(--color-primary), 0px 0px 43px var(--color-primary);
 
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -49,10 +47,8 @@ a.buttonContainer {
     width: calc(100% - 2em);
     height: 100%;
 
-    background: #383838dd;
-    box-shadow: inset 20px 20px 40px #1a1a1add,
-    inset -20px -20px 40px #565656dd,
-    0px 0px 43px #1a1a1add;
+    background: var(--color-primary);
+    box-shadow: inset 15px 15px 30px var(--color-primary), inset -15px -15px 30px var(--color-primary), 0px 0px 43px var(--color-primary);
 
     opacity: 0;
     margin: 0 1em;
