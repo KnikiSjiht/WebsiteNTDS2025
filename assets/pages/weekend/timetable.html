@@ -94,15 +94,15 @@
 	}
 
 	.hh {
-		color: #F90058;
+		color: var(--color-secondary);
 	}
 
     .mm {
-        color: #FFAD00;
+        color: var(--color-secondary);
     }
 
     .ss {
-        color: #5FC5DB;
+        color: var(--color-secondary);
     }
 
     #announcements {
@@ -122,11 +122,11 @@
 				<hr>
 				<div id="mainContent">
 					<p id="subtitle" class="col-lg-10 col-lg-offset-1">
-					This page is updated every 10 seconds. However, we all know things break. Always make sure to keep paying attention to the presenter just in case!
+					Deze pagina wordt elke 10 seconden geüpdatet. Maar zoals we weten kan alles per ongeluk stuk gaan, let dus altijd goed op wat de presentator zegt!
 					</p>
 					<br>
 					<div class="status col-lg-10 col-lg-offset-1"></div>
-					<p id="error">Something went wrong when trying to load the website. Please try again later by refreshing the page!</p>
+					<p id="error"> Oeps! Er ging iets mis bij het laden van de website. Probeer het later nog eens door de pagina te herladen!</p>
 					<div id="timetableContainer">
 					</div>
 				</div>
@@ -240,8 +240,7 @@
 			});
 
 			if (!['friday', 'saturday', 'sunday', 'monday'].includes(day)) {
-				$('#subtitle').text("We know it's not friday. But you're looking at this page outside of the ETDS weekend." +
-					" So... We're showing you the timetable for friday! Why? 'Cause an empty page looks a little sad! Also... #morehype!")
+				$('#subtitle').text("Het is helaas nog geen vrijdag, maar we laten je toch alvast de timetable zien. Waarom? Omdat een lege pagina zo treurig is! En... #meerhype!")
 				return { day, time, timeWithS, now }
 			}
 

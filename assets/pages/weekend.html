@@ -14,12 +14,13 @@
 	}
 
 	#announcements a {
-		color: var(--color-primary);
+		color: var(--color-tertiary);
 	}
 
     .blah {
         display: none;
     }
+
 
 	@media (min-width: 992px) {
 		#announcements {
@@ -57,28 +58,20 @@
 </style>
 
 <section id="home" class="autoheight">
-<!--	&lt;!&ndash;LANDING VIDEO&ndash;&gt;-->
-<!--	&lt;!&ndash;	TODO: Lazy load videos&ndash;&gt;-->
-<!--	<video id="video" autoplay muted playsinline loop >-->
-<!--		<source src="assets/vid/hell.mp4" type="video/mp4">-->
-<!--		your browser does not support HTML5-->
-<!--	</video>-->
-<!--	&lt;!&ndash;/LANDING VIDEO&ndash;&gt;-->
-
-	<div class="home-bg"></div>
+<div class="home-bg"></div>
 </section>
 
 <section class="weekend text-center section-padding">
 	<div class="container wow animated fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.5s">
 		<div class="row">
 			<div class="col-lg-8 align-center">
-				<h1 class="section ">Festival<br/>App</h1>
+				<h1 style="color:var(--color-secondary);" class="section ">Festival<br/>App</h1>
 				<hr>
 				<p class="blah">
-					Important information will be displayed here on phones!
+					Op je telefoon wordt hier de belangrijke info getoond!
 				</p>
 				<br>
-				<p id="error">Something went wrong when trying to load the announcements. Please try again later by refreshing the page!</p>
+				<p id="error"> Er ging iets mis bij het laden van de aankondigingen. Probeer het later nog eens door de pagina te herladen!</p>
 				<div id="announcements">
 					Loading...
 				</div>
@@ -98,25 +91,25 @@
 					<span>FAQs</span>
 				</div>
 			</a>
-			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://jury.xtds.dance/heat_lists/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
+			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://jury.ntds.dance/heat_lists/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/heatList.svg" alt="Heat Lists"></div>
-					<span>Heat lists</span>
+					<span>Heatlijsten</span>
 				</div>
 			</a>
-   <a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://dansschoolpendulum.nl/etds/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
+   <a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://dansschoolpendulum.nl/ntds/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/heatList.svg" alt="Heat Lists"></div>
-					<span>Heat lists per dancer</span>
+					<span>Heatlijsten per danser</span>
 				</div>
 			</a>
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/blind-date" data-wow-duration="1s" data-wow-delay="0.3">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/bracelet.svg" alt="Blind date colors"></div>
-					<span>Blind date colors</span>
+					<span>Blinddate info</span>
 				</div>
 			</a>
-			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://fall.xtds.dance/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
+			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://portal.ntds.dance/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/portal.svg" alt="Portal"></div>
 					<span>Portal</span>
@@ -125,55 +118,43 @@
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/helping" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/hand.svg" alt="Volunteering"></div>
-					<span>Helper info</span>
+					<span>VTO shift informatie</span>
 				</div>
 			</a>
-			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/dishwasher" data-wow-duration="1s" data-wow-delay="0.3s">
+			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/map-venue" data-wow-duration="1s" data-wow-delay="0.3">
 				<div class="button">
-					<div class="imageContainer"><img src="assets/img/weekend/dishwasher.svg" alt="Dishwasher"></div>
-					<span>Dishwasher manual</span>
+					<div class="imageContainer"><img src="assets/img/weekend/map.svg" alt="Festival Map"></div>
+					<span>Kaart</span>
 				</div>
 			</a>
-<!--			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/map-venue" data-wow-duration="1s" data-wow-delay="0.3">-->
-<!--				<div class="button">-->
-<!--					<div class="imageContainer"><img src="assets/img/weekend/map.svg" alt="Festival Map"></div>-->
-<!--					<span>Map of Hell</span>-->
-<!--				</div>-->
-<!--			</a>-->
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/sleeping-halls" data-wow-duration="1s" data-wow-delay="0.3">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/sleep.svg" alt="Sleeping halls"></div>
-					<span>Sleeping hall layout</span>
+					<span>Slaapzaal indeling</span>
 				</div>
 			</a>
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/tc" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/leader.svg" alt="Team Captain Center"></div>
-					<span>Team captain center</span>
+					<span>Teamcaptains</span>
 				</div>
 			</a>
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/judging" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/suit.svg" alt="Adjudication"></div>
-					<span>Adjudicator center</span>
+					<span>Juryleden</span>
 				</div>
 			</a>
 			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/emergency" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/emergency.svg" alt="Emergency"></div>
-					<span>In case of emergency</span>
-				</div>
-			</a>
-			<a class="buttonContainer normalColor col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/weekend/game" data-wow-duration="1s" data-wow-delay="0.3s">
-				<div class="button">
-					<div class="imageContainer"><img src="assets/img/weekend/game.png" alt="Game"></div>
-					<span>Game</span>
+					<span>Noodgevallen</span>
 				</div>
 			</a>
 			<a class="buttonContainer normalColor col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="#/home" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/other/logo_small.png" alt="Home"></div>
-					<span>To the main website</span>
+					<span>Naar de website</span>
 				</div>
 			</a>
 		</div>
