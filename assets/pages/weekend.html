@@ -97,7 +97,7 @@
 					<span>Heatlijsten</span>
 				</div>
 			</a>
-   <a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://dansschoolpendulum.nl/ntds/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
+   			<a class="buttonContainer col-xs-6 col-sm-4 col-md-3 wow animated fadeInDown" href="https://dansschoolpendulum.nl/ntds/" target="_blank" data-wow-duration="1s" data-wow-delay="0.3s">
 				<div class="button">
 					<div class="imageContainer"><img src="assets/img/weekend/heatList.svg" alt="Heat Lists"></div>
 					<span>Heatlijsten per danser</span>
@@ -212,7 +212,7 @@
 				return;
 			}
 
-			fetch('https://etds666.vercel.app/api/timetable').then(res => {
+			fetch('https://ntds2025.nl/api/timetable').then(res => {
 				try {
 					res.json().then(data => {
 						announcements = transformData(data)

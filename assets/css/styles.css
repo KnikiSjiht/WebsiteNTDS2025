@@ -276,10 +276,13 @@ hr {
 }
 
 .logo-img {
-    width: 70%;     /* Make the image span the full width of the viewport */
-    height: auto;     /* Keep the aspect ratio */
-    object-fit: contain; /* Ensure the image fits within its container */
-    margin-top: -10vh;
+    max-width: 90%; /* Adjust width */
+    max-height: calc(80vh - 150px); /* Prevents logo from being too big */
+    height: auto;
+    object-fit: contain;
+    flex-grow: 0;
+    margin: 0 auto;
+    z-index: 2; /* Ensures logo is above other elements */
 }
 
 .home-bg {
@@ -403,8 +406,21 @@ video {
     width: 100%;
     z-index: 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Keeps logo + buttons visible */
+    height: 100vh; /* Full viewport height */
+    padding: 5vh 0; /* Prevents logo from touching the top */
+    position: relative;
+    z-index: 2; /* Ensures it's above other elements */
+    padding-bottom: 0;
 }
 
 .landing-test-pos .landing-text-center-container {
@@ -441,12 +457,14 @@ video {
 }
 
 .home-header-btn-container {
-    margin-top: 3em;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 3; /* Ensures buttons stay clickable */
+    padding-bottom: 50px;
 }
 
 .home-header-btn {
