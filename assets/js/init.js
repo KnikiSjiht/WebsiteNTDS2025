@@ -166,7 +166,7 @@ jQuery( document ).ready(function( $ ) {
 					smoothScrollToAnchor(anchor);
 					return;
 				}
-				this.partial("assets/pages/home.html", function() {
+				this.partial("assets/pages/weekend.html", function() {
 					window.scrollTo(0,0);
 					loadAfterPartial();
 					smoothScrollToAnchor(anchor);
